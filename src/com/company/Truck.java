@@ -5,9 +5,23 @@ public class Truck {
     String model;
     double volumeccm;
     private int pRelease;
+    Object Exception;
 
     public String getBrend() {
         return brend;
+    }
+
+    public double getVolumeccm() {
+        return volumeccm;
+    }
+
+    public void setVolumeccm(double volumeccm) {
+        if (volumeccm < 0) {
+            Exception.equals(volumeccm);
+
+        } else {
+            this.volumeccm = volumeccm;
+        }
     }
 
     public void setBrend(String brend) {

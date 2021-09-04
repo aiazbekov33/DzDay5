@@ -1,8 +1,15 @@
 package com.company;
-
+import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+//        Scanner in = new Scanner(System.in);   доп ДЗ
+//        System.out.print("Введите имя: ");
+//        String name = in.nextLine();
+//        System.out.println("Приветствую вас " + name);
+
+
+
         String str1 = new String();
         System.out.println("Легковые автомобили:");
         CarBrend carBrend1 = new CarBrend();
@@ -30,15 +37,16 @@ public class Main {
         truck1.setBrend("Daimler-Benz");
         truck1.model = "D208";
         truck1.setpRelease(1991);
-        truck1.volumeccm = (2.8);
+        truck1.setVolumeccm(4);
         System.out.println(" Марка Авто: " + truck1.getBrend() + " модель: " + truck1.model +
-                " Объем дв.: " + truck1.volumeccm + " Год выпуска: " + truck1.getpRelease()+ "г.");
+                " Объем дв.: " + truck1.getVolumeccm() + " Год выпуска: " + truck1.getpRelease()+ "г.");
 
 
 
 
 
     }
+
 
 
 
